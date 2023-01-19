@@ -1,0 +1,32 @@
+.orange {
+  color: orange;
+}
+
+.profile {
+  width: 300px;
+  text-align: center;
+  padding: 1rem;
+  background-color: aliceblue;
+  border-radius: 20px;
+  box-shadow: 8px 13px 35px 9px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 8px 13px 35px 9px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 8px 13px 35px 9px rgba(0, 0, 0, 0.39);
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.new {
+  position: absolute;
+  left: 70%;
+  top: 10%;
+  background-color: aquamarine;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
