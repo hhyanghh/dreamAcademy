@@ -1,0 +1,15 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: beige;
+}
+
+.pointer {
+  position: absolute;
+  background-color: crimson;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: 0px;
+  top: 0px;
+}
