@@ -26,7 +26,7 @@ function Card({ children }) {
         margin: "1rem",
         padding: "1rem",
         textAlign: "center",
-      }}
+      }}ㄹ
     >
       {children}
     </div>
