@@ -4,6 +4,7 @@
   --color-grey: #d1d1d1;
   --color-text: #22243b;
   --color-accent: #c92c6d;
+  --color-white: white;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   background: #609ea2;
+  font-size: 1.2rem;
 }
 
 #root {
@@ -38,6 +40,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+* {
+  box-sizing: border-box;
 }
 
 ul {
