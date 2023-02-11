@@ -22,27 +22,6 @@ function App() {
         onFilterChange={(filter) => setFilter(filter)}
       />
       <TodoList filter={filter} />
-      <Card
-        sx={{
-          maxWidth: 400,
-          margin: "auto",
-        }}
-      >
-        <CardContent>
-          <Box xs={{ display: "flex", justifyContent: "spaceBetween" }}>
-            <Button>토글모드</Button>
-            <ButtonGroup
-              variant="contained"
-              aria-label="outlined primary button group"
-            >
-              <Button>All</Button>
-              <Button>Active</Button>
-              <Button>Completed</Button>
-            </ButtonGroup>
-          </Box>
-        </CardContent>
-        <CardContent>body 영역</CardContent>
-      </Card>
     </>
   );
 }
