@@ -5,8 +5,8 @@ import styles from "./TodoList.module.css";
 
 export default function TodoList({ filter }) {
   const [todos, setTodos] = useState([
-    { id: "1", text: "장보기", status: "active" },
-    { id: "2", text: "공부보기", status: "active" },
+    { id: "1", text: "React - todo-app 완성", status: "active" },
+    { id: "2", text: "JS - 비동기 통신", status: "active" },
   ]);
   const handleAdd = (todo) => {
     // 새로운 투두를 todos에 업데이트
