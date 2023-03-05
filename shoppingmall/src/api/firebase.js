@@ -18,6 +18,10 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 const provider = new GoogleAuthProvider();
 
+provider.setCustomParameters({
+  prompt: "select_account",
+});
+
 export function login() {
   signInWithPopup(auth, provider).catch(console.error);
 }
