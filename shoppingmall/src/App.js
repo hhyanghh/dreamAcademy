@@ -1,8 +1,16 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
+import { Outlet } from "react-router-dom";
 
 function App() {
-  return <div>shopping mall project</div>;
+  return (
+    <>
+      <Navbar />
+      <Outlet />
+    </>
+  );
 }
 
 export default App;
