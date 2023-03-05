@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FiShoppingBag } from "react-icons/fi";
 import { BsFillPencilFill } from "react-icons/bs";
 import { login, logout, onUserStateChange } from "../api/firebase";
+import User from "./User";
 
 export default function Header() {
   const [user, setUser] = useState();
@@ -23,7 +24,7 @@ export default function Header() {
         <Link to="/products/new" className="text-2xl">
           <BsFillPencilFill />
         </Link>
-        {user && <div>{user.displayName}</div>}
+        {user && <User user={user} />}
         {!user && <button onClick={login}>Login</button>}
         {user && <button onClick={logout}>Logout</button>}
       </nav>
