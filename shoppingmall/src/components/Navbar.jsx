@@ -8,18 +8,9 @@ export default function Header() {
   const [user, setUser] = useState();
 
   useEffect(() => {
-    onUserStateChange((user) => {
-      console.log(user);
-      setUser(user);
-    });
+    onUserStateChange(setUser);
   }, []);
-  const handleLogin = () => {
-    login().then(setUser);
-  };
 
-  const handleLogout = () => {
-    logout().then(setUser);
-  };
   return (
     <header className="flex justify-between border-b border-gray-300 p-2">
       <Link to="/" className="flex items-center text-4xl text-brand">
@@ -33,8 +24,8 @@ export default function Header() {
           <BsFillPencilFill />
         </Link>
         {user && <div>{user.displayName}</div>}
-        {!user && <button onClick={handleLogin}>Login</button>}
-        {user && <button onClick={handleLogout}>Logout</button>}
+        {!user && <button onClick={login}>Login</button>}
+        {user && <button onClick={logout}>Logout</button>}
       </nav>
     </header>
   );
